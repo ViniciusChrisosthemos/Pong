@@ -47,6 +47,8 @@ public class PlayerController : MonoBehaviour
                 ball.transform.Rotate(new Vector3(0, 0, 180 + maxAngle * intensity));
 
             GameMaster.Instance.IncreaseBallSpeed();
+
+            SoundManager.Instance.PlayImpact();
         }
     }
 

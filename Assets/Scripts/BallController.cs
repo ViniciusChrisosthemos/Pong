@@ -28,11 +28,13 @@ public class BallController : MonoBehaviour
         if (_collision.CompareTag("HorizontalBar"))
         {
             myTransform.rotation = Quaternion.Euler(myTransform.rotation.eulerAngles * -1);
+            SoundManager.Instance.PlayImpact();
         }
         else if (_collision.CompareTag("VerticalBar"))
         {
             speed = defaultSpeed;
             GameMaster.Instance.FinishRound(_collision.transform.position.x > 0);
+            SoundManager.Instance.PlayPoint();
         }
     }
 

@@ -34,7 +34,7 @@ public class GameMaster: MonoBehaviour
 
     private void Update()
     {   
-        if (Input.GetKeyUp(KeyCode.Escape))
+        if (Input.GetKeyUp(KeyCode.P))
         {
             if (Time.timeScale == 0)
             {
@@ -46,6 +46,9 @@ public class GameMaster: MonoBehaviour
                 Time.timeScale = 0;
                 UIManager.Instance.SetMenuScreen(true);
             }
+        }else if (Input.GetKeyUp(KeyCode.Escape))
+        {
+            Application.Quit();
         }
     }
 
