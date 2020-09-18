@@ -1,6 +1,7 @@
 # About
 - This repository contains the implamentation of the game **Pong**.
 - The game was developed in **Unity 2019.3.10f1**.
+- For more games, access my projects [here](https://github.com/ViniciusChrisosthemos/Projetos).
 
 # Images
 - Menu
